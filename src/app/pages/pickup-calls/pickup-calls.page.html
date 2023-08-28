@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-back-button text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>My Pickup Calls</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <app-pickup-call-card
+    status="hold"
+    updatedAt="21/08/2003 21:30"
+    createdAt="20/08/2003"
+    notes="The curious cat explored the abandoned mansion, its tail twitching with excitement."
+  ></app-pickup-call-card>
+  <app-pickup-call-card
+    status="processing"
+    updatedAt="23/08/2003 15:30"
+    createdAt="25/08/2003"
+    notes="Under the shimmering stars, a distant howl echoed through the night."
+  ></app-pickup-call-card>
+  <app-pickup-call-card
+    status="finished"
+    updatedAt="27/08/2003 19:30"
+    createdAt="231/08/2003"
+    value="$ 10,00"
+  ></app-pickup-call-card>
+</ion-content>
